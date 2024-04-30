@@ -1,0 +1,52 @@
+
+# 通用配置
+general_paras:
+  output_dir: "ms_res/"
+
+  random_seed: 0
+
+  # 1. Vanilla FL  2. Fed-MS
+  defense: 'Vanilla FL'
+
+  # 1.Noise 2.Random 3.Safeguard 4.Backward
+  attacks: 'Noise'
+  # used in safeguard
+  scale_factor: 0.6
+  noise_std: 1
+  noise_mean: 0
+  random_lower: -10
+  random_upper: 10
+
+
+dataset_paras:
+ 
+  name: 'cifar10'
+  batch_size: 128
+  save_path: 'data'
+
+  num_workers: 24
+  num_classes: 10
+
+model_paras:
+  name: 'MobileNet'
+
+
+fed_paras:
+
+  round: 20
+  iid: False
+  dirichlet_rate: 1
+  client_number: 10
+  server_num: 10
+  attacker_rate: 0.2
+  split_rate: 0.9
+
+train_paras:
+
+  learning_rate: 0.001
+  optimizer: 'adam'
+  cuda_number: 1
+  epoch: 3
+  criterion: 'CrossEntropy'
+
+
