@@ -77,3 +77,19 @@ Due to its decentralized framework and outdoor environments, federated edge lear
 | cuda_number    | Number of CUDA devices to use.            |
 | epoch          | Number of epochs for training.            |
 | criterion      | Loss function used for training.          |
+
+
+## References
+
+```bibtex
+@INPROCEEDINGS{10631004,
+  author={Qi, Senmao and Ma, Hao and Zou, Yifei and Yuan, Yuan and Li, Peng and Yu, Dongxiao},
+  booktitle={2024 IEEE 44th International Conference on Distributed Computing Systems (ICDCS)}, 
+  title={Fed-MS: Fault Tolerant Federated Edge Learning with Multiple Byzantine Servers}, 
+  year={2024},
+  volume={},
+  number={},
+  pages={982-992},
+  keywords={Training;Fault tolerance;Federated learning;Fault tolerant systems;Filtering algorithms;Fasteners;Numerical models;Federated Learning;Edge Networks;Byzantine Fault Tolerance},
+  doi={10.1109/ICDCS60910.2024.00095}
+}
